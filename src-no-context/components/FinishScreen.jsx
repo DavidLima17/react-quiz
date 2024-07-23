@@ -1,8 +1,4 @@
-import { useQuiz } from "../context/QuizContext";
-
-// { points, maxPoints, highscore, dispatch }
-function FinishScreen() {
-  const { points, maxPoints, highscore, dispatch } = useQuiz();
+function FinishScreen({ points, maxPoints, highscore, dispatch }) {
   const percengate = (points / maxPoints) * 100;
 
   let emoji;
